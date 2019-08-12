@@ -1,0 +1,403 @@
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: '';
+  clear: both;
+  height: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.visuallyHidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0);
+  overflow: hidden;
+}
+
+header {
+  background: url("../Boat-Ride-Adventures-final-assets/home-header.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 95%;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 75px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.titlepic {
+  position: absolute;
+  right: 0;
+  width: 45%;
+  bottom: -200px;
+}
+
+.title {
+  color: #fdd908;
+  text-shadow: 2px 2px black;
+  font-size: 2.5rem;
+  width: 45%;
+  padding: 200px 0;
+}
+
+/*Main Section 1 Styles*/
+.main1 {
+  background: #eafefc;
+}
+
+.main1 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 200px;
+}
+
+.main1 ul li {
+  width: 45%;
+}
+
+.main1 ul li:nth-of-type(1) {
+  list-style-image: url("https://www.placecage.com/400/300");
+}
+
+.main1 ul li:nth-of-type(2) {
+  list-style-image: url("https://www.placecage.com/400/300");
+}
+
+.main1 ul li:nth-of-type(3) {
+  list-style-image: url("https://www.placecage.com/400/300");
+}
+
+.main1 ul li:nth-of-type(4) {
+  list-style-image: url("https://www.placecage.com/400/300");
+}
+
+/* Main Section 2 Styles */
+.main2 {
+  background: #0d457f;
+  color: white;
+}
+
+.main2flex1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main2flex2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main2pic1 {
+  width: 40%;
+  line-height: 0;
+  -webkit-box-shadow: 10px 10px #fdd908;
+          box-shadow: 10px 10px #fdd908;
+}
+
+.main2pic2 {
+  width: 40%;
+  line-height: 0;
+  -webkit-box-shadow: -10px 10px #fdd908;
+          box-shadow: -10px 10px #fdd908;
+}
+
+.main2text1 {
+  width: 40%;
+}
+
+.main2text2 {
+  width: 40%;
+}
+
+.main2text1 a,
+.main2text2 a {
+  text-decoration: none;
+  background: #fdd908;
+  color: #0d457f;
+  padding: 10px;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+}
+
+/*Main Section 3 Styles*/
+.main3 {
+  background: #eafefc;
+  color: #0d457f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main3text1 a,
+.main3text2 a {
+  text-decoration: none;
+  background: #fdd908;
+  padding: 10px;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+}
+
+.main3pic1 {
+  min-width: 100%;
+}
+
+.main3combo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main3pic2 {
+  width: 20%;
+  min-width: 15%;
+  line-height: 0;
+  -webkit-box-shadow: -10px 10px #fdd908;
+          box-shadow: -10px 10px #fdd908;
+}
+
+/* Main Section 4 Styles */
+.main4 {
+  background: #0d457f;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  padding: 75px 0;
+}
+
+.gallerypic1,
+.gallerypic2,
+.gallerypic3 {
+  width: 30%;
+}
+
+/*Footer Styles*/
+footer {
+  background: #fdd908;
+  color: #0d457f;
+}
+
+footer p {
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "IM Fell English", serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}

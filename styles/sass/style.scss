@@ -1,0 +1,25 @@
+@import "setup";
+@import "header";
+@import "home";
+
+$primary: #0d457f;
+$secondary: #ffffff;
+$hFont: "IM Fell English", serif;
+$pFont: "Roboto", sans-serif;
+$backgroundColor: #eafefc;
+$accentColor: #fdd908;
+
+html {
+    font-family: $pFont;
+    font-size: 125%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: $hFont;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+

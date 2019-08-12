@@ -1,0 +1,52 @@
+$accentColor: #fdd908;
+$secondary: #ffffff;
+
+header {
+    background: url("../Boat-Ride-Adventures-final-assets/home-header.jpg") no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 95%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav ul {
+    display: flex;
+    width: 33%;
+    justify-content: space-between;
+    padding-top: 75px;
+}
+
+nav a {
+    text-decoration: none;
+    color: $secondary;
+    font-weight: 700;
+}
+
+.titlepic {
+    position: absolute;
+    right: 0;
+    width: 45%;
+    bottom: -200px;
+}
+
+.title {
+    color: $accentColor;
+    text-shadow: 2px 2px black;
+    font-size: 2.5rem;
+    width: 45%;
+    padding: 200px 0;
+}

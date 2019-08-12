@@ -1,0 +1,145 @@
+$accentColor: #fdd908;
+$primary: #0d457f;
+$backgroundColor: #eafefc;
+$hFont: "IM Fell English", serif;
+
+/*Main Section 1 Styles*/
+
+.main1 {
+    background: $backgroundColor;
+}
+
+.main1 ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 200px;
+}
+
+.main1 ul li {
+    width: 45%;
+}
+
+.main1 ul li:nth-of-type(1) {
+    list-style-image: url("https://www.placecage.com/400/300");
+}
+
+.main1 ul li:nth-of-type(2) {
+    list-style-image: url("https://www.placecage.com/400/300");
+}
+
+.main1 ul li:nth-of-type(3) {
+    list-style-image: url("https://www.placecage.com/400/300");
+}
+
+.main1 ul li:nth-of-type(4) {
+    list-style-image: url("https://www.placecage.com/400/300");
+}
+
+/* Main Section 2 Styles */
+
+.main2 {
+    background: $primary;
+    color: white;
+}
+
+.main2flex1 {
+    display: flex;
+}
+
+.main2flex2 {
+    display: flex;
+}
+
+.main2pic1 {
+    width: 40%;
+    line-height: 0;
+    box-shadow: 10px 10px $accentColor;
+}
+
+.main2pic2 {
+    width: 40%;
+    line-height: 0;
+    box-shadow: -10px 10px $accentColor;
+}
+
+.main2text1 {
+    width: 40%;
+}
+
+.main2text2 {
+    width: 40%;
+}
+
+.main2text1 a,
+.main2text2 a {
+        text-decoration: none;
+        background: $accentColor;
+        color: $primary;
+        padding: 10px;
+        font-family: $hFont;
+        text-transform: uppercase;
+    }
+
+/*Main Section 3 Styles*/
+
+.main3 {
+    background: $backgroundColor;
+    color: $primary;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main3text1 a,
+.main3text2 a {
+        text-decoration: none;
+        background: $accentColor;
+        padding: 10px;
+        font-family: $hFont;
+        text-transform: uppercase;
+    }
+
+.main3pic1 {
+    min-width: 100%;
+}
+
+.main3combo {
+    display: flex;
+}
+
+.main3pic2 {
+    width: 20%;
+    min-width: 15%;
+    line-height: 0;
+    box-shadow: -10px 10px $accentColor;
+}
+
+/* Main Section 4 Styles */
+
+.main4 {
+    background: $primary;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 75px 0;
+}
+
+.gallerypic1,
+.gallerypic2,
+.gallerypic3 {
+    width: 30%;
+}
+
+/*Footer Styles*/
+
+footer {
+    background: $accentColor;
+    color: $primary;
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
