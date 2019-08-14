@@ -218,6 +218,16 @@ nav a {
   font-weight: 700;
 }
 
+nav a:hover {
+  border-bottom: 2px solid #fdd908;
+}
+
+.hamburger {
+  position: absolute;
+  top: -1000px;
+  font-size: 3rem;
+}
+
 .titlepic {
   position: absolute;
   right: 0;
@@ -231,6 +241,27 @@ nav a {
   font-size: 2.5rem;
   width: 45%;
   padding: 200px 0;
+}
+
+@media (max-width: 900px) {
+  .wrapper {
+    margin: 0;
+    width: 100%;
+  }
+  .title {
+    font-size: 1.10rem;
+  }
+  .titlepic {
+    width: 70%;
+  }
+  header nav {
+    visibility: hidden;
+  }
+  .hamburger {
+    top: 40px;
+    right: 60px;
+    color: #ffffff;
+  }
 }
 
 /*Main Section 1 Styles*/
@@ -249,22 +280,28 @@ nav a {
 
 .main1 ul li {
   width: 45%;
+  min-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.main1 ul li:nth-of-type(1) {
-  list-style-image: url("https://www.placecage.com/400/300");
-}
-
-.main1 ul li:nth-of-type(2) {
-  list-style-image: url("https://www.placecage.com/400/300");
-}
-
-.main1 ul li:nth-of-type(3) {
-  list-style-image: url("https://www.placecage.com/400/300");
+.main1 .icon1,
+.main1 .icon2,
+.main1 .icon3,
+.main1 .icon4 {
+  background: #fdd908;
+  color: #0d457f;
+  font-size: 1.2rem;
+  padding: 25px;
+  margin: 25px;
+  border-radius: 50%;
+  width: 75px;
+  max-height: 75px;
 }
 
 .main1 ul li:nth-of-type(4) {
-  list-style-image: url("https://www.placecage.com/400/300");
+  margin-bottom: 10%;
 }
 
 /* Main Section 2 Styles */
@@ -277,34 +314,56 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main2flex2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .main2pic1 {
   width: 40%;
+  min-width: 320px;
   line-height: 0;
-  -webkit-box-shadow: 10px 10px #fdd908;
-          box-shadow: 10px 10px #fdd908;
+  -webkit-box-shadow: 1rem 1rem #fdd908;
+          box-shadow: 1rem 1rem #fdd908;
+  position: relative;
+  top: -40px;
 }
 
 .main2pic2 {
   width: 40%;
+  min-width: 320px;
   line-height: 0;
-  -webkit-box-shadow: -10px 10px #fdd908;
-          box-shadow: -10px 10px #fdd908;
+  -webkit-box-shadow: -1rem 1rem #fdd908;
+          box-shadow: -1rem 1rem #fdd908;
+  position: relative;
+  bottom: -40px;
+}
+
+.main2pic1 img,
+.main2pic2 img {
+  height: 100%;
 }
 
 .main2text1 {
   width: 40%;
+  min-width: 320px;
+  margin: 4%;
 }
 
 .main2text2 {
   width: 40%;
+  min-width: 320px;
+  margin: 4%;
 }
 
 .main2text1 a,
@@ -328,6 +387,12 @@ nav a {
       flex-wrap: wrap;
 }
 
+.main3text1 {
+  width: 70%;
+  margin: 10%;
+  text-align: center;
+}
+
 .main3text1 a,
 .main3text2 a {
   text-decoration: none;
@@ -345,14 +410,27 @@ nav a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main3text2 {
+  width: 50%;
+  margin: 8% 4% 8% 0;
 }
 
 .main3pic2 {
   width: 20%;
-  min-width: 15%;
+  min-width: 150px;
   line-height: 0;
-  -webkit-box-shadow: -10px 10px #fdd908;
-          box-shadow: -10px 10px #fdd908;
+  margin: 2%;
+  -webkit-box-shadow: -1rem 1rem #fdd908;
+          box-shadow: -1rem 1rem #fdd908;
 }
 
 /* Main Section 4 Styles */
@@ -386,6 +464,371 @@ footer p {
   margin: 0;
   padding: 10px;
   text-align: center;
+}
+
+@media (max-width: 600px) {
+  .main3text2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .main1 p,
+  .main2 p,
+  .main3 p,
+  .main4 p {
+    font-size: 0.75rem;
+    min-width: 250px;
+  }
+  .icon1,
+  .icon2,
+  .icon3,
+  .icon4 {
+    display: none;
+  }
+  .main1 {
+    text-align: center;
+  }
+  .main1 ul li p {
+    width: 100%;
+    max-width: 250px;
+  }
+  .main2text1 {
+    width: 40%;
+    min-width: 250px;
+    max-width: 250px;
+    margin: 4%;
+  }
+  .main2text2 {
+    width: 40%;
+    min-width: 250px;
+    max-width: 250px;
+    margin: 4%;
+  }
+}
+
+/* Header Styles*/
+.bloghead {
+  background: url("../Boat-Ride-Adventures-final-assets/blog-header.jpg") no-repeat;
+  background-size: cover;
+}
+
+.bloghead h1 {
+  color: #ffffff;
+}
+
+/*Blog Styles*/
+main {
+  background: #eafefc;
+}
+
+.blogpost {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.maincontainer {
+  width: 70%;
+  color: #0d457f;
+}
+
+aside {
+  width: 30%;
+  max-width: 375px;
+  display: inline-block;
+  margin: 4%;
+  position: relative;
+}
+
+.asidepic {
+  position: absolute;
+  top: -20px;
+  right: 40px;
+}
+
+.asideflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 300px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #0d457f;
+  width: 75%;
+  margin-left: 25%;
+}
+
+.asiderecent ul {
+  list-style-type: disc;
+}
+
+.asiderecent ul li {
+  color: #ffffff;
+}
+
+.asidemission h4,
+.asiderecent h4 {
+  color: #fdd908;
+}
+
+.asidemission p,
+.asiderecent p {
+  color: #ffffff;
+}
+
+figure {
+  border-left: 4px solid #fdd908;
+  border-bottom: 4px solid #fdd908;
+}
+
+.figurepic {
+  position: relative;
+  top: -150px;
+  line-height: 0;
+  -webkit-box-shadow: -15px 15px #fdd908;
+          box-shadow: -15px 15px #fdd908;
+  margin-left: 15px;
+}
+
+.blogcontainer {
+  position: relative;
+  top: -125px;
+}
+
+.textcontainer p:first-child {
+  font-weight: 700;
+}
+
+.comment1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment1pic,
+.comment2pic {
+  width: 10%;
+  min-width: 10%;
+  line-height: 0;
+  margin: 2%;
+}
+
+textarea {
+  background: #eafefc;
+  width: 100%;
+  border: 2px solid #fdd908;
+  color: #0d457f;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #0d457f;
+  color: #fdd908;
+  margin: 5% 0;
+  padding: 10px;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+}
+
+[name="name"],
+[name="email"] {
+  background: #eafefc;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #fdd908;
+  width: 47%;
+  margin: 5% 0;
+  color: #0d457f;
+}
+
+[name="name"] {
+  margin-right: 5%;
+}
+
+@media (max-width: 900px) {
+  .blogpost {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  aside {
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .asideflex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #0d457f;
+  }
+  .blogcontainer {
+    top: -20px;
+  }
+  .figurepic {
+    top: -20px;
+  }
+  .asidepic {
+    top: -50px;
+    right: 20px;
+  }
+}
+
+/* Header Styles*/
+.contacthead {
+  background: url("../Boat-Ride-Adventures-final-assets/contact-header.jpg") no-repeat;
+  background-size: cover;
+}
+
+.contacthead h1 {
+  color: #ffffff;
+}
+
+.contacthead .title {
+  width: 70%;
+}
+
+.contactmain {
+  background: #eafefc;
+}
+
+.contactcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.contactform {
+  width: 70%;
+  background: #0d457f;
+  margin: 5%;
+  padding: 40px 40px 10px 40px;
+  position: relative;
+  top: -150px;
+  -webkit-box-shadow: 15px 15px #fdd908;
+          box-shadow: 15px 15px #fdd908;
+}
+
+.contactinfo {
+  width: 30%;
+}
+
+.contactform textarea {
+  background: #0d457f;
+  width: 100%;
+  border: 2px solid #fdd908;
+  color: #ffffff;
+}
+
+.contactform [type="submit"] {
+  width: 100%;
+  background: #fdd908;
+  color: #0d457f;
+  margin: 5% 0;
+  padding: 10px;
+  font-family: "IM Fell English", serif;
+  text-transform: uppercase;
+}
+
+.contactform [name="name"],
+.contactform [name="email"] {
+  background: #0d457f;
+  color: #ffffff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid #fdd908;
+  width: 47%;
+  margin: 5% 0;
+}
+
+.contactform [name="name"] {
+  margin-right: 5%;
+}
+
+.icons ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 100px;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.icons ul li {
+  min-width: 30px;
+}
+
+.contactinfo {
+  color: #0d457f;
+}
+
+.address p {
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .contactcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactform {
+    top: 50px;
+  }
+  .contactinfo {
+    width: 50%;
+    margin-bottom: 50px;
+  }
+  form {
+    font-size: 0.75rem;
+  }
+  .contactform [name="name"],
+  .contactform [name="email"] {
+    width: 100%;
+  }
 }
 
 html {

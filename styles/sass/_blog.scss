@@ -1,0 +1,192 @@
+$accentColor: #fdd908;
+$primary: #0d457f;
+$secondary: #ffffff;
+$hFont: "IM Fell English", serif;
+$pFont: "Roboto", sans-serif;
+$backgroundColor: #eafefc;
+
+/* Header Styles*/
+
+.bloghead {
+    background: url("../Boat-Ride-Adventures-final-assets/blog-header.jpg") no-repeat;
+    background-size: cover;
+}
+
+.bloghead h1 {
+    color: $secondary;
+}
+
+/*Blog Styles*/
+
+main {
+    background: $backgroundColor;
+}
+
+.blogpost {
+    display: flex;
+    flex-direction: row;
+}
+
+.maincontainer {
+    width: 70%;
+    color: $primary;
+}
+
+aside {
+    width: 30%;
+    max-width: 375px;
+    display: inline-block;
+    margin: 4%;
+    position: relative;
+}
+
+.asidepic {
+    position: absolute;
+    top: -20px;
+    right: 40px;
+}
+
+
+.asideflex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: $primary;
+    width: 75%;
+    margin-left: 25%;
+}
+
+.asiderecent ul {
+    list-style-type: disc;
+}
+
+
+.asiderecent ul li {
+    color: $secondary;
+}
+
+.asidemission h4,
+.asiderecent h4 {
+    color: $accentColor;
+}
+
+.asidemission p,
+.asiderecent p {
+    color: $secondary;
+}
+
+figure {
+    border-left: 4px solid $accentColor;
+    border-bottom: 4px solid $accentColor;
+}
+
+.figurepic {
+    position: relative;
+    top: -150px;
+    line-height: 0;
+    box-shadow: -15px 15px $accentColor;
+    margin-left: 15px;
+}
+
+.blogcontainer {
+    position: relative;
+    top: -125px;
+}
+
+// .shadow {
+//     box-shadow: 15px -15px $accentColor;
+//     width: 105%;
+//     height: 105%;
+// }
+
+.textcontainer p:first-child {
+    font-weight: 700;
+}
+
+.comment1 {
+    display: flex;
+}
+
+.comment2 {
+    display: flex;
+}
+
+.comment1pic,
+.comment2pic {
+    width: 10%;
+    min-width: 10%;
+    line-height: 0;
+    margin: 2%;
+}
+
+textarea {
+    background: $backgroundColor;
+    width: 100%;
+    border: 2px solid $accentColor;
+    color: $primary;
+}
+
+[type="submit"] {
+    width: 100%;
+    background: $primary;
+    color: $accentColor;
+    margin: 5% 0;
+    padding: 10px;
+    font-family: $hFont;
+    text-transform: uppercase;
+}
+
+[name="name"],
+[name="email"] {
+    background: $backgroundColor;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid $accentColor;
+    width: 47%;
+    margin: 5% 0;
+    color: $primary;
+}
+
+[name="name"] {
+    margin-right: 5%;
+}
+
+@media (max-width: 900px) {
+    .blogpost {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    aside {
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+
+    .asideflex {
+    display: flex;
+    flex-direction: column;
+    padding-top: 300px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: $primary;
+    }
+
+    .blogcontainer {
+        top: -20px;
+    }
+
+    .figurepic {
+        top: -20px;
+    }
+
+    .asidepic {
+    top: -50px;
+    right: 20px;
+    }
+}

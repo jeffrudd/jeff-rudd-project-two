@@ -1,0 +1,121 @@
+$accentColor: #fdd908;
+$primary: #0d457f;
+$secondary: #ffffff;
+$hFont: "IM Fell English", serif;
+$pFont: "Roboto", sans-serif;
+$backgroundColor: #eafefc;
+
+/* Header Styles*/
+
+.contacthead {
+    background: url("../Boat-Ride-Adventures-final-assets/contact-header.jpg") no-repeat;
+    background-size: cover;
+}
+
+.contacthead h1 {
+    color: $secondary;
+}
+
+.contacthead .title {
+    width: 70%;
+}
+
+.contactmain {
+    background: $backgroundColor;
+}
+
+.contactcontainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contactform {
+    width: 70%;
+    background: $primary;
+    margin: 5%;
+    padding: 40px 40px 10px 40px;
+    position: relative;
+    top: -150px;
+    box-shadow: 15px 15px $accentColor;
+}
+
+.contactinfo {
+    width: 30%;
+}
+
+.contactform textarea {
+    background: $primary;
+    width: 100%;
+    border: 2px solid $accentColor;
+    color: $secondary;
+}
+
+.contactform [type="submit"] {
+    width: 100%;
+    background: $accentColor;
+    color: $primary;
+    margin: 5% 0;
+    padding: 10px;
+    font-family: $hFont;
+    text-transform: uppercase;
+}
+
+.contactform [name="name"],
+.contactform [name="email"] {
+    background: $primary;
+    color: $secondary;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 2px solid $accentColor;
+    width: 47%;
+    margin: 5% 0;
+}
+
+.contactform [name="name"] {
+    margin-right: 5%;
+}
+
+.icons ul {
+    display: flex;
+    margin-top: 100px;
+    width: 40%;
+    justify-content: space-between;
+}
+
+.icons ul li {
+    min-width: 30px;
+}
+
+.contactinfo {
+    color: $primary;
+}
+
+.address p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .contactcontainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactform {
+        top: 50px;
+    }
+
+    .contactinfo {
+        width: 50%;
+        margin-bottom: 50px;
+    }
+
+    form {
+        font-size: 0.75rem;
+    }
+
+    .contactform [name="name"],
+    .contactform [name="email"] {
+        width: 100%;
+    }
+}

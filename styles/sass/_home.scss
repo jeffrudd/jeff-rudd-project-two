@@ -17,22 +17,26 @@ $hFont: "IM Fell English", serif;
 
 .main1 ul li {
     width: 45%;
+    min-width: 350px;
+    display: flex;
 }
 
-.main1 ul li:nth-of-type(1) {
-    list-style-image: url("https://www.placecage.com/400/300");
-}
-
-.main1 ul li:nth-of-type(2) {
-    list-style-image: url("https://www.placecage.com/400/300");
-}
-
-.main1 ul li:nth-of-type(3) {
-    list-style-image: url("https://www.placecage.com/400/300");
+.main1 .icon1,
+.main1 .icon2,
+.main1 .icon3,
+.main1 .icon4 {
+    background: $accentColor;
+    color: $primary;
+    font-size: 1.2rem;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 50%;
+    width: 75px;
+    max-height: 75px;
 }
 
 .main1 ul li:nth-of-type(4) {
-    list-style-image: url("https://www.placecage.com/400/300");
+    margin-bottom: 10%;
 }
 
 /* Main Section 2 Styles */
@@ -44,30 +48,48 @@ $hFont: "IM Fell English", serif;
 
 .main2flex1 {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .main2flex2 {
     display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .main2pic1 {
     width: 40%;
+    min-width: 320px;
     line-height: 0;
-    box-shadow: 10px 10px $accentColor;
+    box-shadow: 1rem 1rem $accentColor;
+    position: relative;
+    top: -40px;
 }
 
 .main2pic2 {
     width: 40%;
+    min-width: 320px;
     line-height: 0;
-    box-shadow: -10px 10px $accentColor;
+    box-shadow: -1rem 1rem $accentColor;
+    position: relative;
+    bottom: -40px;
+}
+
+.main2pic1 img,
+.main2pic2 img {
+    height: 100%;
 }
 
 .main2text1 {
     width: 40%;
+    min-width: 320px;
+    margin: 4%;
 }
 
 .main2text2 {
     width: 40%;
+    min-width: 320px;
+    margin: 4%;
 }
 
 .main2text1 a,
@@ -89,6 +111,12 @@ $hFont: "IM Fell English", serif;
     flex-wrap: wrap;
 }
 
+.main3text1 {
+    width: 70%;
+    margin: 10%;
+    text-align: center;
+}
+
 .main3text1 a,
 .main3text2 a {
         text-decoration: none;
@@ -104,13 +132,22 @@ $hFont: "IM Fell English", serif;
 
 .main3combo {
     display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around
+}
+
+.main3text2 {
+    width: 50%;
+    margin: 8% 4% 8% 0;
 }
 
 .main3pic2 {
     width: 20%;
-    min-width: 15%;
+    min-width: 150px;
     line-height: 0;
-    box-shadow: -10px 10px $accentColor;
+    margin: 2%;
+    box-shadow: -1rem 1rem $accentColor;
 }
 
 /* Main Section 4 Styles */
@@ -142,4 +179,53 @@ footer p {
     margin: 0;
     padding: 10px;
     text-align: center;
+}
+
+@media (max-width: 600px) {
+
+    .main3text2 {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .main1 p,
+    .main2 p,
+    .main3 p,
+    .main4 p {
+        font-size: 0.75rem;
+        min-width: 250px;
+    }
+    
+    .icon1,
+    .icon2,
+    .icon3,
+    .icon4  {
+        display: none;
+    }
+
+    .main1 {
+        text-align: center;
+    }
+
+    .main1 ul li p {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .main2text1 {
+        width: 40%;
+        min-width: 250px;
+        max-width: 250px;
+        margin: 4%;
+    }
+
+    .main2text2 {
+        width: 40%;
+        min-width: 250px;
+        max-width: 250px;
+        margin: 4%;
+    }
 }
